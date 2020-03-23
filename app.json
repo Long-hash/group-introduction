@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "example/index",
+    
+    "example/王泽龙/王泽龙",
+    "example/杨文豪/杨文豪",
+    "example/陈杰一/陈杰一",
+    "example/安笛/安笛",
+    "example/贾子安/贾子安"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "团队介绍",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "backgroundColor": "#EDEDED"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "style": "v2",
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}
