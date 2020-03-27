@@ -1,12 +1,11 @@
 {
   "pages": [
-    "example/index",
-    
-    "example/王泽龙/王泽龙",
-    "example/杨文豪/杨文豪",
-    "example/陈杰一/陈杰一",
-    "example/安笛/安笛",
-    "example/贾子安/贾子安"
+    "home/index",
+    "home/王泽龙/王泽龙",
+    "home/杨文豪/杨文豪",
+    "home/陈杰一/陈杰一",
+    "home/安笛/安笛",
+    "home/贾子安/贾子安"
   ],
   "window": {
     "navigationBarTextStyle": "black",
