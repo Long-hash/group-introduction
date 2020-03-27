@@ -1,0 +1,82 @@
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__hd">
+        <view class="page__title">安笛</view>
+        <view class="page__desc">15071014       信息学部</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1">个人信息及介绍</view>
+            <view class="weui-article__section">
+                <view class="weui-article__h3">个人信息</view>
+                <view class="weui-article__section">
+                    
+                    <view class="weui-article__p">
+                      努力毕业群成员，最近正忙于找工作而有点无所谓也有些心累。
+                    </view>
+                    <view class="weui-article__p">
+                       
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">个人兴趣</view>
+                    <view class="weui-article__p">
+平时喜欢写写字画画画弹弹琴唱唱歌，不是结巴，最喜欢吃的是火锅。
+去过的地方很多，梦想走遍祖国大的每个角落
+
+<image class="weui-article__img" src="../images/andi1.jpg" mode="aspectFit" style="height: 200px" />
+
+<image class="weui-article__img" src="../images/andi2.jpg" mode="aspectFit" style="height: 200px" />
+
+<image class="weui-article__img" src="../images/andi3.jpg" mode="aspectFit" style="height: 200px" />
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+
+
+<view  data-weui-theme="{{theme}}">
+	<view class="page__hd">
+	<view class="page__bd page__bd_spacing">
+		<a class="weui-btn weui-btn_default" bindtap="open1" style="color: black">个人愿望及理想</a>
+		<a class="weui-btn weui-btn_default" bindtap="open2" style="color: black">座右铭</a>
+	</view>
+    
+    <view class="fadeIn" wx:if="{{dialog1}}">
+        <view class="weui-mask" bindtap="close"></view>
+        <view class="weui-half-screen-dialog">
+            <view class="weui-half-screen-dialog__hd">
+                <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                    <a class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></a>
+                </view>
+                <view class="weui-half-screen-dialog__hd__main">
+                    <strong class="weui-half-screen-dialog__title">个人愿望及理想</strong>
+                </view>
+            </view>
+            <view class="weui-half-screen-dialog__bd" style="padding-top:64px;height:100px;">
+                愿望是这学期的课都能过并找到一份能吃饱饭的工作
+
+
+            </view>
+        </view>
+    </view>
+   <view class="fadeIn" wx:if="{{dialog2}}">
+        <view class="weui-mask" bindtap="close"></view>
+        <view class="weui-half-screen-dialog">
+            <view class="weui-half-screen-dialog__hd">
+                <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                    <a class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></a>
+                </view>
+                <view class="weui-half-screen-dialog__hd__main">
+                    <strong class="weui-half-screen-dialog__title">座右铭</strong>
+                </view>
+            </view>
+            <view class="weui-half-screen-dialog__bd" style="padding-top:32px;height:50px;">
+                我家门前有两颗树，一颗不是枣树，另一颗也不是枣树
+            </view>
+        </view>
+    </view>
+    </view>
+</view>
+</view>

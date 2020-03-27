@@ -24,10 +24,10 @@ Page({
   player(audio) {
     var that = this
 
-    audio.title = '千与千寻'
+    audio.title = 'The Way I Am'
 
 
-    audio.src = 'https://sharefs.yun.kugou.com/202003252103/1a4e69325d5a02ecb5a05f856478fb17/G175/M01/11/05/T4cBAF2VS3SAXYfNACBF_YjTbsk326.mp3'
+    audio.src = 'https://sharefs.yun.kugou.com/202003272108/87b111b9900318f0a6dde5b35bd0b562/G128/M00/0B/07/YJQEAFrrRYGATIj_AC1ydWI141M376.mp3'
 
 
     audio.onEnded(() => {

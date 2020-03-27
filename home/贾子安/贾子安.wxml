@@ -1,0 +1,75 @@
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__hd">
+        <view class="page__title">贾子安</view>
+        <view class="page__desc">16071012       信息学部</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1">个人信息及介绍</view>
+            <view class="weui-article__section">
+                <view class="weui-article__h3">个人信息</view>
+                <view class="weui-article__section">
+                    
+                    <view class="weui-article__p">
+                     现在大四是计算机科学与技术专业 虽然一直有接触c Java等程序语言 但基础有些薄弱 希望以后的学习能慢慢加强。
+                    </view>
+                    <view class="weui-article__p">
+                       
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">个人兴趣</view>
+                    <view class="weui-article__p">
+音乐 体育 旅游 绘画  音乐的话可能更多是喜欢自己学唱歌 这会让独处的时间很有趣 另外 个人比较擅长武术羽毛球和篮球
+
+
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+
+
+<view  data-weui-theme="{{theme}}">
+	<view class="page__hd">
+	<view class="page__bd page__bd_spacing">
+		<a class="weui-btn weui-btn_default" bindtap="open1" style="color: black">个人愿望及理想</a>
+		<a class="weui-btn weui-btn_default" bindtap="open2" style="color: black">座右铭</a>
+	</view>
+    
+    <view class="fadeIn" wx:if="{{dialog1}}">
+        <view class="weui-mask" bindtap="close"></view>
+        <view class="weui-half-screen-dialog">
+            <view class="weui-half-screen-dialog__hd">
+                <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                    <a class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></a>
+                </view>
+                <view class="weui-half-screen-dialog__hd__main">
+                    <strong class="weui-half-screen-dialog__title">个人愿望及理想</strong>
+                </view>
+            </view>
+            <view class="weui-half-screen-dialog__bd" style="padding-top:64px;height:100px;">
+                希望以后能学有所成 有用武之地 能自由的安排自己的时间
+            </view>
+        </view>
+    </view>
+   <view class="fadeIn" wx:if="{{dialog2}}">
+        <view class="weui-mask" bindtap="close"></view>
+        <view class="weui-half-screen-dialog">
+            <view class="weui-half-screen-dialog__hd">
+                <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                    <a class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></a>
+                </view>
+                <view class="weui-half-screen-dialog__hd__main">
+                    <strong class="weui-half-screen-dialog__title">座右铭</strong>
+                </view>
+            </view>
+            <view class="weui-half-screen-dialog__bd" style="padding-top:32px;height:50px;">
+                做人如山立千仞 为学似海纳百川
+            </view>
+        </view>
+    </view>
+    </view>
+</view>
+</view>

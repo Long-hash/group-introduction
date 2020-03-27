@@ -1,6 +1,7 @@
 
 <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
+
         <view class="page__title">王泽龙</view>
         <view class="page__desc">17062226       应用数理学院</view>
     </view>

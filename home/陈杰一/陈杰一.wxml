@@ -1,0 +1,77 @@
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__hd">
+        <view class="page__title">陈杰一</view>
+        <view class="page__desc">17062111       应用数理学院</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1">个人信息及介绍</view>
+            <view class="weui-article__section">
+                <view class="weui-article__h3">个人信息</view>
+                <view class="weui-article__section">
+                    
+                    <view class="weui-article__p">
+                      数理学院大三学生，主专业是数学，双学位计算机科学与技术
+                    </view>
+                    <view class="weui-article__p">
+                       
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">个人兴趣</view>
+                    <view class="weui-article__p">
+                    喜欢游戏、动漫，下面这首音乐就来自我最近比较喜欢的动漫《异度侵入》
+      
+                    <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+                    </view>
+                </view>
+                
+                  
+            </view>
+        </view>
+    </view>
+
+
+
+<view  data-weui-theme="{{theme}}">
+	<view class="page__hd">
+	<view class="page__bd page__bd_spacing">
+		<a class="weui-btn weui-btn_default" bindtap="open1" style="color: black">个人愿望及理想</a>
+		<a class="weui-btn weui-btn_default" bindtap="open2" style="color: black">座右铭</a>
+	</view>
+    
+    <view class="fadeIn" wx:if="{{dialog1}}">
+        <view class="weui-mask" bindtap="close"></view>
+        <view class="weui-half-screen-dialog">
+            <view class="weui-half-screen-dialog__hd">
+                <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                    <a class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></a>
+                </view>
+                <view class="weui-half-screen-dialog__hd__main">
+                    <strong class="weui-half-screen-dialog__title">个人愿望及理想</strong>
+                </view>
+            </view>
+            <view class="weui-half-screen-dialog__bd" style="padding-top:64px;height:100px;">
+                好好学习天天向上顺利毕业
+            </view>
+        </view>
+    </view>
+   <view class="fadeIn" wx:if="{{dialog2}}">
+        <view class="weui-mask" bindtap="close"></view>
+        <view class="weui-half-screen-dialog">
+            <view class="weui-half-screen-dialog__hd">
+                <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                    <a class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></a>
+                </view>
+                <view class="weui-half-screen-dialog__hd__main">
+                    <strong class="weui-half-screen-dialog__title">座右铭</strong>
+                </view>
+            </view>
+            <view class="weui-half-screen-dialog__bd" style="padding-top:32px;height:50px;">
+                过好每一天
+            </view>
+        </view>
+    </view>
+    </view>
+</view>
+</view>

@@ -1,7 +1,3 @@
-/**
- * mixins 为 Page 增加 mixin 功能
- * 来源：https://segmentfault.com/a/1190000019527762
- */
 const originPage = Page;
 const originProperties = ['data', 'properties', 'options'];
 const originMethods = ['onLoad', 'onReady', 'onShow', 'onHide', 'onUnload', 'onPullDownRefresh', 'onReachBottom', 'onShareAppMessage', 'onPageScroll', 'onTabItemTap'];
