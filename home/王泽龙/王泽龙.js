@@ -1,9 +1,12 @@
+const db = wx.cloud.database({});
+const cont = db.collection('wangzelong');
 
 Page({
   mixins: [require('../../mixin/themeChanged')],
   data: {
     dialog1: false,
-    dialog2: false
+    dialog2: false,
+    ne: [],
   },
   close: function () {
     this.setData({
@@ -27,7 +30,7 @@ Page({
     audio.title = 'The Way I Am'
 
 
-    audio.src = 'https://sharefs.yun.kugou.com/202003272108/87b111b9900318f0a6dde5b35bd0b562/G128/M00/0B/07/YJQEAFrrRYGATIj_AC1ydWI141M376.mp3'
+    audio.src = 'https://7465-test-condition-f3ufo-1302039225.tcb.qcloud.la/the%20way%20i%20am.mp3?sign=50bac6291758983f21b75269a9b0ad3b&t=1588919231'
 
 
     audio.onEnded(() => {
@@ -35,10 +38,7 @@ Page({
     })
   },
 
-  onLoad: function () {
 
-    this.player(wx.getBackgroundAudioManager())
-  },
 
 
   onUnload: function () {
@@ -62,6 +62,25 @@ Page({
   },
   onPageScroll: function (ev) {
 
-  }
+  },
+
+
+
+  onLoad: function (options) {
+    this.player(wx.getBackgroundAudioManager())
+    var _this = this;
+    const db = wx.cloud.database({
+      env: 'test-condition-f3ufo',
+      traceUser: true,
+    })
+    db.collection('wangzelong').get({
+      success: res => {
+        console.log(res.data)
+        this.setData({
+          ne: res.data
+        })
+      }
+    })
+  },
 })
 

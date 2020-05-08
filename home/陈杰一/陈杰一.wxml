@@ -1,7 +1,8 @@
+<view wx:for="{{ne}}">
 <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
-        <view class="page__title">陈杰一</view>
-        <view class="page__desc">17062111       应用数理学院</view>
+        <view class="page__title"> {{item.name}}</view>
+        <view class="page__desc"> {{item.id}}</view>
     </view>
     <view class="page__bd">
         <view class="weui-article">
@@ -11,7 +12,7 @@
                 <view class="weui-article__section">
                     
                     <view class="weui-article__p">
-                      数理学院大三学生，主专业是数学，双学位计算机科学与技术
+                       {{item.c1}}
                     </view>
                     <view class="weui-article__p">
                        
@@ -20,8 +21,7 @@
                 <view class="weui-article__section">
                     <view class="weui-article__h3">个人兴趣</view>
                     <view class="weui-article__p">
-                    喜欢游戏、动漫，下面这首音乐就来自我最近比较喜欢的动漫《异度侵入》
-      
+                     {{item.c2}}
                     <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
                     </view>
                 </view>
@@ -52,7 +52,7 @@
                 </view>
             </view>
             <view class="weui-half-screen-dialog__bd" style="padding-top:64px;height:100px;">
-                好好学习天天向上顺利毕业
+                 {{item.c3}}
             </view>
         </view>
     </view>
@@ -68,10 +68,13 @@
                 </view>
             </view>
             <view class="weui-half-screen-dialog__bd" style="padding-top:32px;height:50px;">
-                过好每一天
+                {{item.c4}}
             </view>
         </view>
     </view>
     </view>
 </view>
+</view>
+
+
 </view>

@@ -1,9 +1,9 @@
-
+<view wx:for="{{ne}}">
 <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
 
-        <view class="page__title">王泽龙</view>
-        <view class="page__desc">17062226       应用数理学院</view>
+        <view class="page__title">{{item.name}}</view>
+        <view class="page__desc">{{item.id}}</view>
     </view>
     <view class="page__bd">
         <view class="weui-article">
@@ -13,7 +13,7 @@
                 <view class="weui-article__section">
                     
                     <view class="weui-article__p">
-                      我是大三的学生，本专业是数学，大二的时候开始学习双学位的课程，虽然学习双学位已经很长时间了，不过感觉很多地方还是一知半解，需要更进一步的深入学习，之前基本只学习过c语言，对其他语言的了解比较少。
+                      {{item.w1}}
                     </view>
                     <view class="weui-article__p">
                        
@@ -22,9 +22,9 @@
                 <view class="weui-article__section">
                     <view class="weui-article__h3">个人兴趣</view>
                     <view class="weui-article__p">
-性格比较沉稳，平时喜欢看看书，看看电影，听听歌，偶尔也喜欢打会儿球，感觉自己有时候比较粗心，有时候又会比较追求完美，自己平时是一个比较爱思考的人。
+{{item.w2}}
 
-<image class="weui-article__img" src="../images/wangzelong.png" mode="aspectFit" style="height: 200px" />
+<image class="weui-article__img" src="https://7465-test-condition-f3ufo-1302039225.tcb.qcloud.la/%E5%9B%BE%E7%89%87/wangzelong.png?sign=91ae2c9272762f529eac5c76e3458b6a&t=1588919962" mode="aspectFit" style="height: 200px" />
                     </view>
                 </view>
             </view>
@@ -52,7 +52,7 @@
                 </view>
             </view>
             <view class="weui-half-screen-dialog__bd" style="padding-top:64px;height:100px;">
-                希望能好好学习计算机编程的相关知识，顺利完成这学期的课设，将来某一天能开发出一个真正属于自己的实用的应用程序。当然，我的理想呢是以后能在工作中做自己喜欢的事情。
+                {{item.w3}}
             </view>
         </view>
     </view>
@@ -68,10 +68,14 @@
                 </view>
             </view>
             <view class="weui-half-screen-dialog__bd" style="padding-top:32px;height:50px;">
-                Nothing is impossible!
+               {{item.w4}}
             </view>
         </view>
     </view>
     </view>
 </view>
+</view>
+
+
+
 </view>

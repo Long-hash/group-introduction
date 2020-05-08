@@ -1,7 +1,8 @@
+<view wx:for="{{ne}}">
 <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
-        <view class="page__title">杨文豪</view>
-        <view class="page__desc">17062225       应用数理学院</view>
+        <view class="page__title">{{item.name}}</view>
+        <view class="page__desc">{{item.id}}</view>
     </view>
     <view class="page__bd">
         <view class="weui-article">
@@ -11,7 +12,7 @@
                 <view class="weui-article__section">
                     
                     <view class="weui-article__p">
-                      本人是北京工业大学应用数理学院的一名本科生，我不单单喜欢数学，而且对计算机编程也有浓厚的兴趣，报名计算机的双学位对我来说既是一个深入学习的机会，也是一个不小的挑战。
+                      {{item.y1}}
                     </view>
                     <view class="weui-article__p">
                        
@@ -20,7 +21,7 @@
                 <view class="weui-article__section">
                     <view class="weui-article__h3">个人兴趣</view>
                     <view class="weui-article__p">
-在生活中，我是一个思维比较跳跃的人，热爱音乐以及游戏，平时还喜欢阅读名著扩展视野。
+{{item.y2}}
 
 
                     </view>
@@ -50,7 +51,7 @@
                 </view>
             </view>
             <view class="weui-half-screen-dialog__bd" style="padding-top:64px;height:100px;">
-                在有趣的地方做着有趣的事情
+               {{item.y3}}
             </view>
         </view>
     </view>
@@ -66,10 +67,14 @@
                 </view>
             </view>
             <view class="weui-half-screen-dialog__bd" style="padding-top:32px;height:50px;">
-                追求生命中最基本的需要
+                {{item.y4}}
             </view>
         </view>
     </view>
     </view>
 </view>
+</view>
+
+
+
 </view>

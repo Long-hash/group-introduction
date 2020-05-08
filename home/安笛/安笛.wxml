@@ -1,7 +1,8 @@
+<view wx:for="{{ne}}">
 <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
-        <view class="page__title">安笛</view>
-        <view class="page__desc">15071014       信息学部</view>
+        <view class="page__title">{{item.name}}</view>
+        <view class="page__desc">{{item.id}}</view>
     </view>
     <view class="page__bd">
         <view class="weui-article">
@@ -11,7 +12,7 @@
                 <view class="weui-article__section">
                     
                     <view class="weui-article__p">
-                      努力毕业群成员，最近正忙于找工作而有点无所谓也有些心累。
+                      {{item.a1}}
                     </view>
                     <view class="weui-article__p">
                        
@@ -20,14 +21,13 @@
                 <view class="weui-article__section">
                     <view class="weui-article__h3">个人兴趣</view>
                     <view class="weui-article__p">
-平时喜欢写写字画画画弹弹琴唱唱歌，不是结巴，最喜欢吃的是火锅。
-去过的地方很多，梦想走遍祖国大的每个角落
+{{item.a2}}
 
-<image class="weui-article__img" src="../images/andi1.jpg" mode="aspectFit" style="height: 200px" />
+<image class="weui-article__img" src="https://7465-test-condition-f3ufo-1302039225.tcb.qcloud.la/%E5%9B%BE%E7%89%87/andi1.jpg?sign=a85f42b08cab6a9c04b86aaa43dc9b6f&t=1588920010" mode="aspectFit" style="height: 200px" />
 
-<image class="weui-article__img" src="../images/andi2.jpg" mode="aspectFit" style="height: 200px" />
+<image class="weui-article__img" src="https://7465-test-condition-f3ufo-1302039225.tcb.qcloud.la/%E5%9B%BE%E7%89%87/andi2.jpg?sign=3ee293765f3ee9c90c7bef6c4bf7dcfa&t=1588920032" mode="aspectFit" style="height: 200px" />
 
-<image class="weui-article__img" src="../images/andi3.jpg" mode="aspectFit" style="height: 200px" />
+<image class="weui-article__img" src="https://7465-test-condition-f3ufo-1302039225.tcb.qcloud.la/%E5%9B%BE%E7%89%87/andi3.jpg?sign=246b4dd474c048b12b06e5a369c14b11&t=1588920055" mode="aspectFit" style="height: 200px" />
                     </view>
                 </view>
             </view>
@@ -55,7 +55,7 @@
                 </view>
             </view>
             <view class="weui-half-screen-dialog__bd" style="padding-top:64px;height:100px;">
-                愿望是这学期的课都能过并找到一份能吃饱饭的工作
+               {{item.a3}}
 
 
             </view>
@@ -73,10 +73,14 @@
                 </view>
             </view>
             <view class="weui-half-screen-dialog__bd" style="padding-top:32px;height:50px;">
-                我家门前有两颗树，一颗不是枣树，另一颗也不是枣树
+                {{item.a4}}
             </view>
         </view>
     </view>
     </view>
 </view>
+</view>
+
+
+
 </view>

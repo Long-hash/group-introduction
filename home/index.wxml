@@ -1,5 +1,5 @@
 <view class="content">
-	<image class='background' src="images/beijing.png" mode="aspectFill"></image>
+	<image class='background' src="https://7465-test-condition-f3ufo-1302039225.tcb.qcloud.la/%E5%9B%BE%E7%89%87/beijing.png?sign=3653955123694620c1d6a1f01887072e&t=1588919894" mode="aspectFill"></image>
 
     <view class="page__hd">
         <view class="page__title" style="color: white">团队介绍</view>
@@ -11,7 +11,7 @@
                 <view class="kind-list__item">
                     <view id="{{item.id}}" class="weui-flex kind-list__item-hd {{item.open ? 'kind-list__item-hd_show' : ''}}" bindtap="kindToggle">
                         <view class="weui-flex__item">{{item.name}}</view>
-                        <image class="kind-list__img" src="images/chengyuan.png"></image>
+                        <image class="kind-list__img" src="https://7465-test-condition-f3ufo-1302039225.tcb.qcloud.la/%E5%9B%BE%E7%89%87/chengyuan.png?sign=fb1157ec6050a07adcf1e4b7057f76bd&t=1588920374"></image>
                     </view>
                     <view class="kind-list__item-bd {{item.open ? 'kind-list__item-bd_show' : ''}}">
                         <view class="weui-cells {{item.open ? 'weui-cells_show' : ''}}">

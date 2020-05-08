@@ -37,7 +37,7 @@ Page({
 
     audio.title = '千与千寻'
 
-    audio.src = 'https://sharefs.yun.kugou.com/202003252103/1a4e69325d5a02ecb5a05f856478fb17/G175/M01/11/05/T4cBAF2VS3SAXYfNACBF_YjTbsk326.mp3'
+    audio.src = 'https://7465-test-condition-f3ufo-1302039225.tcb.qcloud.la/background%20music.mp3?sign=6592c2a4f5e00b2d323258ee5a3a5aaa&t=1588918938'
 
     
     audio.onEnded(() => {

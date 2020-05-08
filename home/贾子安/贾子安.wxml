@@ -1,7 +1,9 @@
+<view wx:for="{{ne}}">
 <view class="page" data-weui-theme="{{theme}}">
     <view class="page__hd">
-        <view class="page__title">贾子安</view>
-        <view class="page__desc">16071012       信息学部</view>
+        <view class="page__title">
+        {{item.name}}</view>
+        <view class="page__desc">{{item.id}}</view>
     </view>
     <view class="page__bd">
         <view class="weui-article">
@@ -11,7 +13,7 @@
                 <view class="weui-article__section">
                     
                     <view class="weui-article__p">
-                     现在大四是计算机科学与技术专业 虽然一直有接触c Java等程序语言 但基础有些薄弱 希望以后的学习能慢慢加强。
+                     {{item.j1}}
                     </view>
                     <view class="weui-article__p">
                        
@@ -20,9 +22,7 @@
                 <view class="weui-article__section">
                     <view class="weui-article__h3">个人兴趣</view>
                     <view class="weui-article__p">
-音乐 体育 旅游 绘画  音乐的话可能更多是喜欢自己学唱歌 这会让独处的时间很有趣 另外 个人比较擅长武术羽毛球和篮球
-
-
+{{item.j2}}
                     </view>
                 </view>
             </view>
@@ -50,7 +50,7 @@
                 </view>
             </view>
             <view class="weui-half-screen-dialog__bd" style="padding-top:64px;height:100px;">
-                希望以后能学有所成 有用武之地 能自由的安排自己的时间
+               {{item.j3}}
             </view>
         </view>
     </view>
@@ -66,10 +66,14 @@
                 </view>
             </view>
             <view class="weui-half-screen-dialog__bd" style="padding-top:32px;height:50px;">
-                做人如山立千仞 为学似海纳百川
+               {{item.j4}}
             </view>
         </view>
     </view>
     </view>
 </view>
+</view>
+
+
+
 </view>
